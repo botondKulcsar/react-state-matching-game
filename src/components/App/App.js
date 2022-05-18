@@ -62,6 +62,14 @@ class App extends Component {
     })
   }
 
+  handleNumTileChange = num => {
+    this.setState({
+      numTiles: num,
+      playing: false,
+      tiles: []
+    })
+  }
+
   render () {
     return (
       <div className='App'>
@@ -70,6 +78,7 @@ class App extends Component {
           playing={this.state.playing}
           numTiles={this.state.numTiles}
           startGame={this.startGame}
+          handleNumTileChange={this.handleNumTileChange}
         />
         <Board numTiles={this.state.numTiles} tiles={this.state.tiles} />
       </div>
