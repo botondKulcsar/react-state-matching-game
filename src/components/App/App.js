@@ -16,13 +16,6 @@ class App extends Component {
       tiles: [],
       toBeCleared: null
     }
-    // this.setState({
-    //   numTiles: 36,
-    //   playing: false,
-    //   previousTileIndex: null,
-    //   tiles: [],
-    //   toBeCleared: null
-    // })
   }
 
   startGame = numTiles => {
